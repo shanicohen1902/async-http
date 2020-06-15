@@ -22,6 +22,7 @@ public class MainApp {
     }
 
     public static List<CompletableFuture<String>> sendNewDevicesAsync(String url, List<String> userAgents) {
+
         WebClient webClient = new WebClient();
 
         List<CompletableFuture<String>> tasks = new ArrayList<CompletableFuture<String>>();
